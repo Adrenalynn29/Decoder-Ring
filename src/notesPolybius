@@ -1,0 +1,10 @@
+Polybius square Cipher
+The purpose is to decode a message where each letter is represented by a certain number
+
+First, I well create an alphabet array and assign a value to each letter as objects
+
+create a variable "solved" to hold the encoded message.
+Then create "word" variable to change all letter to uppercase
+
+Then I need to loop through the alphabet
+if the letter matches the letter in the string, return the number

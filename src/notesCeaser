@@ -1,0 +1,53 @@
+ceaser cipher
+goal = take a message and encrypt it by shifting every letter by the
+same value in its location in the alphabet, or vise versa- decrypt 
+
+
+if the shift is equal to 0
+return false
+if shift is greater than 25
+return false
+if shift is less than -25
+return false
+
+the encryped message will be put into a string called solved
+all letters in the string will changed to lowercase
+
+
+if encode is true: encrypting
+
+loop through each character in the string
+asciNum is the number associated with inidividual characters in the string
+newAsciNum is the asciNum for each letter plus the shift entered
+
+if the asciNum is less than or equal to 32 and also less than or equal to 47 then:
+dont add the shift just leave it as it is
+
+if the newAsciNum is greater than 122(z)
+then subtract 26 to get to the beginning of the alphabet
+
+if newAsciNum is less than 97 
+then add 26 to get to the correct letter
+
+otherwise, change each letter in the string to its AsciNumber and add the shift
+and then change back to new letter
+
+if encode is false: decrypting
+
+loop through each character in the string
+asciNum is the number associated with inidividual characters in the string
+newAsciNum is the asciNum for each letter MINUS the shift entered
+
+if the asciNum is less than or equal to 32 and also less than or equal to 47 then:
+dont add the shift just leave it as it is
+
+if the newAsciNum is greater than 122(z)
+then subtract 26 to get to the beginning of the alphabet
+
+if newAsciNum is less than 97 
+then add 26 to get to the correct letter
+
+otherwise, change each letter in the string to its AsciNumber and add the shift
+and then change back to new letter
+
+
